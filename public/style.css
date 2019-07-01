@@ -1,1 +1,66 @@
-/* qualquer coisa  */
+#navbar-background{
+    height: 90px;
+  width: 1440px;
+  background-color: #FFF;
+  text-align: center;
+}
+
+#navbar{
+    position: fixed;
+            top: 0;
+            background-color:white;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 1;
+            color: white;
+}
+
+.nav-link-ti{
+    height: 18px;
+  width: 158px;
+  color: #1D1F24;
+  font-family: Arial;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 18px;
+}
+
+
+            .nav-link-in{
+                height: 18px;
+  width: 92px;
+  color: #1D1F24;
+  font-family: Arial;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 18px;
+            }
+            .nav-link-wor{
+                height: 18px;
+  width: 124px;
+  color: #1D1F24;
+  font-family: Arial;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 18px;
+            }
+            .nav-link-vag{
+                height: 18px;
+  width: 64px;
+  color: #1D1F24;
+  font-family: Arial;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 18px;
+            }
+            .nav-link-new{
+                height: 16px;
+  width: 53px;
+  color: #1D1F24;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 16px;
+            }
