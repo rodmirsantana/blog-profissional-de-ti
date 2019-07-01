@@ -1,2 +1,2 @@
 # blog-profissional-de-ti
-Blog 
+Projeto de um Blog realizado durante o programa do Gama Experience #23. 
