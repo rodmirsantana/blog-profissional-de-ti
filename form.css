@@ -1,10 +1,11 @@
-.rectangle {
-    height: 1308.82px;
-    width: 2611.27px;	
-    border-radius: 220px;	
-    background-color: #3DBFBD;
+body {
+    background-color: #333333;
 }
 
 .link {
     color: #3A3A3A;
+}
+
+input [type=submit]{
+    
 }
