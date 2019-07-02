@@ -71,6 +71,13 @@ header {
     font-size: 16px;
     margin: 10px;
     padding: 10px;
+    background-image: url('img/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    font-family: "Raleway";
+    height: 100%;
+    margin: 00px;
 }
 
 .botton {
