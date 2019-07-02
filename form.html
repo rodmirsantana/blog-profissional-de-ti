@@ -24,19 +24,34 @@
 </head>
 
 <body>
-    <div class="container" style="margin-top: 300px;">
+    <div>
+        <header id="header">
+            <img id="header-img" href="index.html" src="img/logo.jpg" alt="Logo.">
+            <!--<nav id="navbar">-->
+            <a href="#insights" class="nav-link">HOME</a>
+            <a href="#siganos" class="nav-link">SIGA-NOS!</a>
+
+
+        </header>
+    </div>
+
+    <div class="container" style="margin-top: 200px; margin-bottom: 200px;">
             <div class="row">
                 <div class="span12">
                     <div class="thumbnail center well well-small text-center">
-                        <h3>Você sabe quanto poderia estar ganhando no mercado de T.I.?</h3>
+                        <h4>Preencha os dados abaixo, receba o ebook gratuito e fique por dentro da área de Tecnologia da Informação! </h4>
                         <br />
                         <form method="post" name="formulario-do-corpo" data-netlify="true">
                             <div class="input-prepend"><span class="add-on"><i class="icon-user"></i></span>
-                                <input type="text" name="nome" placeholder="Qual seu nome?">
+                                <input type="text" name="nome" placeholder="Qual o seu nome?">
                             </div>
                             <br />
                             <div class="input-prepend"><span class="add-on"><i class="icon-user"></i></span>
                                 <input type="text" name="sobrenome" placeholder="Sobrenome?">
+                            </div>
+                            <br />
+                            <div class="input-prepend"><span class="add-on"><i class="icon-briefcase"></i></span>
+                                <input type="text" name="cargo" placeholder="Cargo/Profissão?">
                             </div>
                             <br />
                             <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
@@ -44,14 +59,36 @@
                             </div>
                             <br />
                             <br />
-                            <input type="submit" value="Receber mais conteúdo" class="btn btn-success btn-user" id="btnLogin">
+                            <!-- <form action="https://drive.google.com/uc?authuser=0&id=1sDz76Clb4Taf3GV3afFy_ApjnOdHZN6r&export=download" method="get"> -->
+                                <input type="submit" value="Receber por e-mail" class="btn btn-success btn-user" id="btnLogin" onclick="window.location='/blog-profissional-de-ti.blog.br';">
+                            <!-- </form> -->
                       </form>
                     </div>    
                 </div>
             </div>
         </div>
 
-    
+        <!-- <div class="insta" id="siganos">
+                <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+                <h2>#VEMSERTI</h2>
+            </div> -->
+        
+            <footer class="footer-main" id="siganos">
+                <div class="logotipo">
+                    <img src="img/icon.png" alt="logotipo"> Profissional de TI © 2019. Todos os direitos reservados.
+                </div>
+                <nav class="redes">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/company/profissional-de-ti" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+
 </body>
 
 </html>
