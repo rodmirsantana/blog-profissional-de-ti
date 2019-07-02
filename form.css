@@ -1,14 +1,6 @@
-.user {
-
+.rectangle {
+    height: 1308.82px;
+    width: 2611.27px;	
+    border-radius: 220px;	
+    background-color: #3DBFBD;
 }
-
-.form {	
-    height: 582px;
-    width: 569px;
-}
-
-.label-email{	
-    height: 81px;
-    width: 441px;
-}
-
