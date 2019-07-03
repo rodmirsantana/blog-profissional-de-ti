@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+body {
+    background-color: #333333;
+}
+
+.link {
+    color: #3A3A3A;
+}
+=======
 .link {
     color: #3A3A3A;
 }
@@ -124,3 +133,4 @@
 .insta img {
     width: 10%;
 }
+>>>>>>> 90de5ee97c75c810569c8981621bcca16e853bf8

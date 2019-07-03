@@ -66,6 +66,7 @@ header {
 .intro-page {
     font-family: "Raleway";
     color: white;
+    position: static;
     text-align: center;
     text-shadow: 2px 2px 2px rgb(153, 150, 150);
     font-size: 16px;
@@ -80,7 +81,7 @@ header {
     margin: 00px;
 }
 
-.button {
+.botton {
     font-family: "Raleway";
     font-size: 16px;
     font-weight: 700;

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Programa de formação para profissionais interessados nas mais diversas áreas de Tecnologia de Informação">
+    <meta name="keywords" content="cursos, tecnologia, formação, consultoria">
+    <meta name="author" content="OneMind">
+
+    <link red="canonical" href="https://profissionaisdeti.com"/>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="form.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <style>
+            header {
+                position: relative;
+                flex-shrink: 0;
+                text-decoration: none;
+                margin: 10px;
+                font-family: "Raleway";
+                color: black;
+            }
+            a {
+                font-family: "Raleway";
+                color: black;
+                text-decoration: none;
+
+            }
+            .header-body {
+                justify-content: center;
+            }
+            .header-logo {
+                text-align: center;
+            }
+            
+            .form-box {
+                background-color: rgb(67, 192, 188);
+                font-family: "Raleway";
+                font-size 16px;
+                display: flex;
+                flex-direction: column;
+                padding: 2em;
+                border-radius: 10px;
+                margin: 0 auto;
+                justify-content: space-evenly;
+                max-width: 400px;
+            }
+
+            .title{
+                text-align: center;
+            }
+          
+            .button-form {
+                background-color: rgb(139, 204, 202);
+                height: 50px;
+                border: 0;
+                margin-top: 1em;
+                font-weight: bold;
+                border: 0;
+                border-radius: 5px;
+                width: 100%;
+            }
+            
+           #submeter{
+               
+                margin: 0 auto;
+                max-width: 400px;
+
+                
+            }
+            .form-header {
+                width: 100%;
+                background-color: #dcdcdc;
+                height: 70px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .margin-top-one {
+                margin-top: 1em;
+            }
+            
+            @media screen and (max-width: 750px){
+                .form-content {
+                    flex-wrap: wrap;
+                }
+            }
+            .form-post {
+                text-align: left;
+            }
+            
+        </style>
+
+</head>
+
+<div>
+    <header id="header">
+        <img id="header-img" href="index.html" src="img/logo.jpg" alt="Logo.">
+        <!--<nav id="navbar">-->
+        <a href="index.html" class="header">HOME</a>
+    </header>
+</div>
+
+<body>
+
+        <div class="form-box">
+            <h5 class="title">Preencha os dados abaixo, receba o ebook gratuito via e-mail e saiba quais são as novidades que vão alavancar a sua carreira em TI! </h5>
+            <br />
+            <div class="margin-top-one">
+                <form method="post" name="formulario-do-corpo" data-netlify="true">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nome" placeholder="Qual o seu nome?" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome?" maxlength="80" >
+                        </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="empresa" placeholder="Empresa?" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="cargo" placeholder="Cargo/Profissão?" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail corporativo?" maxlength="50">
+                        </div>
+                        <div class="margin-top-one"></div>
+                            <!-- <button type="submit" class="btn btn-primary" id="submeter">Submit</button> -->
+                            <input type="submit" value="Receber mais conteúdo" class="btn btn-secondary" id="submeter" onclick="window.location='/blog-profissional-de-ti.blog.br';">
+                </form>
+            </div>
+        </div>
+    
+        <footer class="footer-main" id="siganos">
+                <div class="logotipo">
+                    <img src="img/icon.png" alt="logotipo"> Profissional de TI © 2019. Todos os direitos reservados.
+                </div>
+                <nav class="redes">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/company/profissional-de-ti" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Profissional-de-TI-2270995952954553/" target="_blank"><img src="img/face.png" alt="Facebook"></a>
+                        </li>
+                    </ul>
+                </nav>
+        </footer>
+    
+
+    <script>
+            document.getElementById("submeter").addEventListener("click", e => {
+                let nome = document.getElementById("nome").value;
+                let sobrenome = document.getElementById("sobrenome").value;
+                let cargo = document.getElementById("cargo").value;
+                let empresa = document.getElementById("empresa").value;
+                let email = document.getElementById("email").value;
+                if(nome == "" || sobrenome == "" || cargo == "" || empresa == "" || email == ""){
+                    alert("Todos os campos devem ser preenchidos!");
+                }
+            });
+    </script>
+
+</body>
+
+</html>
