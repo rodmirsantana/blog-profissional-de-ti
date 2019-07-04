@@ -1,13 +1,5 @@
-html{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 body {
     background-color: #333333;
-    margin: 0;
-    padding: 0;
-    height: 100%;
 }
 
 .link {
@@ -62,7 +54,6 @@ body {
     color: black;
     margin: 0%;
     padding: 0%;
-    
 }
 
 .logotipo {
