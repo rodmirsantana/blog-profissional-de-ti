@@ -22,78 +22,6 @@
 
     <title>EBOOK GRÁTIS</title>
 
-    <style>
-        a {
-            font-family: "Raleway";
-            color: black;
-            text-decoration: none;
-        }
-        
-        .form-box {
-            background-color: rgb(67, 192, 188);
-            font-family: "Raleway";
-            font-size: 16px;
-            display: flex;
-            flex-direction: column;
-            padding: 2em;
-            border-radius: 10px;
-            margin: 0 auto;
-            justify-content: space-evenly;
-            max-width: 400px;
-        }
-        
-        .title {
-            text-align: center;
-        }
-        
-        .button-form {
-            background-color: rgb(139, 204, 202);
-            height: 50px;
-            border: 0;
-            margin-top: 1em;
-            font-weight: bold;
-            border: 0;
-            border-radius: 5px;
-            width: 100%;
-        }
-        
-        #submeter {
-            margin: 0 auto;
-            max-width: 400px;
-        }
-        
-        .form-header {
-            width: 100%;
-            background-color: #dcdcdc;
-            height: 70px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .margin-top-one {
-            margin-top: 1em;
-        }
-        
-        @media screen and (max-width: 750px) {
-            .form-content {
-                flex-wrap: wrap;
-            }
-        }
-        
-        .form-post {
-            text-align: left;
-        }
-    </style>
-
-    <script id="mcjs">
-        !função(c, h, i, m, p); {
-            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-        }(documento,
-            "script", "https://chimpstatic.com/mcjs-connected/js/users/e0e4d83a1504810fe055ef326/55d03b29df3802a7ede18edbb.js");
-    </script>
-
     <script>
         (function(h, o, t, j, a, r) {
             h.hj = h.hj || function() {
@@ -112,25 +40,26 @@
     </script>
 </head>
 
-<body>
-    <div>
-        <header>
+<body class="custom-body">
+    <section>
+        <header class="header-navbar">
             <nav class="navbar">
                 <a class="navbar-brand" href="index.html"><img id="header-img" href="index.html" src="img/logo-header.svg" alt="Logo."></a>
+                <span class="navbar-toggler-icon"></span>
                 <ul class="navbar-ul">
-                    <li class="navbar-li">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
                     <li class="navbar-li">
                         <a class="nav-link" href="quem-somos.html">Quem somos</a>
                     </li>
                     <li class="navbar-li">
-                        <!--<a class="nav-link" href="#redes">Conecte-se</a>-->
+                        <a class="nav-link" href="form.html">Ebooks</a>
+                    </li>
+                    <li class="navbar-li">
+                        <a class="nav-link" href="#redes">Conecte-se</a>
                     </li>
                 </ul>
             </nav>
         </header>
-    </div>
+    </section>
 
     <div class="form-box">
         <h5 class="title">Preencha os dados abaixo, receba o ebook gratuito e fique por dentro das novidades que vão alavancar a sua carreira em TI! </h5>
@@ -138,9 +67,9 @@
         <div class="margin-top-one">
             <form method="post" name="formulario-do-corpo" data-netlify="true" action="/thanks.html">
                 <div class="form-group">
-                    <input type="text" name="nome" class="form-control" placeholder="Qual o seu nome?" maxlength="50" required>
+                    <input type="text" name="nome" class="form-control" placeholder="Nome completo?" maxlength="50" required>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome?" maxlength="80" required>
                 </div>
                 <div class="form-group">
@@ -148,7 +77,7 @@
                 </div>
                 <div class="form-group">
                     <input type="text" name="cargo" class="form-control" placeholder="Cargo/Profissão?" maxlength="50" required>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <input type="email" name="email" class="form-control" placeholder="E-mail corporativo?" maxlength="50" required>
                 </div>
@@ -159,26 +88,23 @@
         </div>
     </div>
 
+    <section>
+        <div class="redes" id="redes">
+            <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img class="insta" src="img/insta-green.svg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/Profissional-de-TI-2270995952954553/" target="_blank"><img class="face" src="img/face-green.svg" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/profissional-de-ti" target="_blank"><img class="linkedin" src="img/linkedin-green.svg" alt="Linkedin"></a>
+        </div>
+    </section>
 
-
-    <!-- <footer class="footer-main" id="siganos">
-                <div class="logotipo">
-                    <img src="img/icon.png" alt="logotipo"> Profissional de TI © 2019. Todos os direitos reservados.
-                </div>
-                <nav class="redes">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/Profissional-de-TI-2270995952954553/" target="_blank"><img src="img/face.png" alt="Facebook"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/profissional-de-ti" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
-                        </li>
-                    </ul>
-                </nav>
-        </footer>  -->
+    <footer class="logo-footer">
+        <div>
+            <img src="img/logo-footer.svg" alt="logo-footer">
+            <p class="footer-text">Profissional de TI © 2019. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-bar">
+            <p><br/> </p>
+        </div>
+    </footer>
 
 </body>
 
