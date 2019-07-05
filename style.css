@@ -1,322 +1,223 @@
-#navbar-background {
-    height: 90px;
-    width: 1440px;
-    background-color: #FFF;
-    text-align: center;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 1;
-    color: white;
-    font-family: "Raleway";
-    z-index: 10;
-}
-
-#navbar {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 1;
-    color: white;
-}
-
-.nav-link {
-    margin: 10px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Raleway";
-}
-
-#header-img {
-    height: 60px;
-    margin-right: 20px;
-    align-content: flex-start;
-}
-
-.quem-somos {
-    background-image: url('img/background2.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    font-family: "Raleway";
-    height: 100%;
-    margin: 00px;
-}
-
-.h-quem {
-    font-family: "Raleway";
-    color: rgb(67, 192, 188);
-    text-align: center;
-}
-
-.intro-page {
-    font-family: "Raleway";
-    color: white;
-    position: static;
-    text-align: center;
-    text-shadow: 2px 2px 2px rgb(153, 150, 150);
-    font-size: 16px;
-    margin: 10px;
-    padding: 10px;
-    background-image: url('img/background2.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    font-family: "Raleway";
-    height: 100%;
-    margin: 00px;
-}
-
-.botton {
-    font-family: "Raleway";
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    background: #eee;
-    box-shadow: 0 2px rgb(158, 152, 152);
-    color: rgb(80, 80, 80);
-}
-
-.botton:hover {
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.22);
-}
-
 body {
-    color: rgb(58, 58, 58);
+    background-color: rgba(58, 58, 58, 1);
     font-family: "Raleway";
-    line-height: 1.5;
-    font-size: 100%;
 }
 
-a {
-    text-decoration: none;
+.navbar-brand {
+    float: left;
+    padding: 20px;
 }
 
-h2 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-p,
-figure {
-    padding: 0;
-    margin: 0;
-    text-align: justify;
-}
-
-.main {
-    padding: 5px;
+.navbar {
+    max-width: 1090px;
     margin: 0 auto;
-    max-width: 1100px;
-}
-
-
-/*colunas dentro do post*/
-
-.coluna {
-    flex: 1;
-    flex-direction: column;
-}
-
-.post {
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.568);
-    box-shadow: 1px 2px 4px #0000001f;
-    color: rgb(58, 58, 58);
+    height: 150px;
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-basis: auto;
+}
+
+.navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
     max-height: 100%;
 }
 
-.img-artigo {
-    background: #eee;
+.navbar-li {
+    float: left;
+    max-height: 100%;
+}
+
+.nav-link {
     display: block;
-    padding-top: 75%;
-    position: relative;
-    width: 100%;
-}
-
-.post:hover {
-    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.img-artigo img {
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.img-artigo.figura2 {
-    padding-top: 50%;
-}
-
-.img-artigo.figura3 {
-    padding-top: 50%;
-}
-
-.corpo-artigo {
-    padding: 15px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    background-color: rgb(212, 228, 228);
-}
-
-.tit-artigo {
-    color: #333;
-    font-size: 20px;
-    line-height: 1.5;
-    flex-shrink: 0;
-}
-
-.cont-artigo {
-    flex: 1;
-    margin-top: 5px;
-}
-
-.info {
-    display: flex;
-    font-size: 16px;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-@media screen and (min-width: 800px) {
-    .colunas,
-    .coluna {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .artigo-um {
-        flex-direction: row;
-    }
-    .artigo-um .corpo-artigo {
-        flex: 1;
-    }
-    .artigo-um .img-artigo {
-        height: 200px;
-        order: 2;
-        padding-top: 0;
-        width: 300px;
-    }
-    .main-col {
-        flex: 3;
-    }
-    .alinha {
-        flex: 2;
-    }
-}
-
-.footer-main {
-    position: absolut;
-    bottom: 0px;
-    width: 100%;
-    background-color: rgb(116, 116, 116);
-    color: black;
-    margin: 0%;
-    padding: 0%;
-}
-
-.logotipo {
-    width: 100%;
+    color: rgba(67, 192, 188, 1);
     text-align: center;
-    font-size: 16px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.logotipo img {
-    width: 2%;
-    vertical-align: middle;
+.nav-link:hover {
+    color: darkgray;
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    /* .navbar-li.navbar-brand.right,
+    .navbar-li, .navbar-brand {float: none;}
+    .navbar-link {font-size: 16px;} */
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-li {
+        display: block;
+    }
+}
+
+.cover-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    float: none;
+}
+
+.grid {
+    display: grid;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.grid-column-1 {
+    grid-template-columns: 400px 690px;
+    /* Testar */
+    display: grid;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: .5rem;
+}
+
+.experiencia-img {
+    width: 670px;
+    height: 534px;
+    margin: 0;
+    float: right;
+}
+
+.post-title {
+    color: rgba(67, 192, 188, 1);
+    font-size: 28px;
+    text-align: left;
+    line-height: 40px;
+}
+
+.post-content {
+    color: rgba(252, 255, 255, 1);
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.button {
+    background: rgba(67, 192, 188, 1);
+    color: rgba(252, 255, 255, 1);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: bold;
+    float: left;
+}
+
+.grid-column-2 {
+    grid-template-columns: 544px 483px;
+}
+
+.automacao-img {
+    width: 483px;
+    height: 309px;
+    margin: 0;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.ecommerce-img {
+    width: 483px;
+    height: 309px;
+    margin: 0;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.content-right {
+    float: right;
+}
+
+.post-title-2 {
+    color: rgba(67, 192, 188, 1);
+    font-size: 28px;
+    text-align: left;
+    line-height: 40px;
+    float: left;
+    max-width: 483px;
+}
+
+.paragraph-text {
+    max-width: 483px;
+    float: left;
+}
+
+.grid-column-3 {
+    grid-template-columns: 320px 448px 320px;
+}
+
+.chatbot-img {
+    width: 320px;
+    height: 280px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.cargos-ti {
+    width: 320px;
+    height: 280px;
+    margin-left: 64px;
+    margin-right: auto;
+}
+
+.ebook-thumbnail {
+    width: 320px;
+    height: 320px;
+    float: right;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-style: bold;
+    color: rgba(67, 192, 188, 1);
+    text-align: center;
 }
 
 .redes {
-    width: 100%;
+    width: 45%;
+    margin-right: 1%;
     text-align: center;
-}
-
-.redes img {
-    width: 3%;
-}
-
-.redes ul li {
-    list-style-type: none;
-    display: inline;
-}
-
-@media only screem and (min-width: 450px) and (max-width: 768px) {
-    .footer-main {
-        clear: both;
-        width: 100%;
-    }
-    .logotipo {
-        width: 50%;
-        float: left;
-        text-align: left;
-    }
-    .redes {
-        width: 50%;
-        float: right;
-    }
-}
-
-@media only screem and (min-width: 769px) {
-    .footer-main {
-        clear: both;
-        width: 100%;
-        margin-bottom: 3%;
-        font-family: Raleway;
-    }
-    .logotipo {
-        font-size: 16px;
-        width: 45%;
-        float: left;
-        text-align: center;
-    }
-    .logotipo img,
-    .redes img {
-        width: 10%,
-    }
-    .redes {
-        width: 45%;
-        float: right;
-        margin-right: 1%;
-        text-align: center;
-    }
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .insta {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(139, 204, 202);
-    margin: 0px;
-    padding: 0%;
+    margin-right: 100px;
 }
 
-.insta img {
-    width: 5%;
+.face {
+    margin-right: 100px;
+}
+
+.logo-footer {
+    max-width: 1090px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    color: rgba(252, 255, 255, 1);
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer-bar {
+    background-color: rgba(67, 192, 188, 1);
+    bottom: 0;
+}
+
+@media (min-width: 600px) {
+    .grid-column-1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 }
