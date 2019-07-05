@@ -118,46 +118,52 @@
         }
     </style>
 
-    <script id="mcjs">
-        !função(c, h, i, m, p); {
-            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-        }(documento,
-            "script", "https://chimpstatic.com/mcjs-connected/js/users/e0e4d83a1504810fe055ef326/55d03b29df3802a7ede18edbb.js");
-    </script>
 </head>
 
-<body>
+<body class="custom-body">
 
-    <div>
-        <header id="header">
-            <img id="header-img" href="index.html" src="img/logo.jpg" alt="Logo.">
-            <!--<nav id="navbar">-->
-            <a href="index.html" class="header">HOME</a>
-        </header>
-    </div>
+    <section>
+            <header class="header-navbar">
+                <nav class="navbar">
+                    <a class="navbar-brand" href="index.html"><img id="header-img" href="index.html" src="img/logo-header.svg" alt="Logo."></a>
+                    <span class="navbar-toggler-icon"></span>
+                    <ul class="navbar-ul">
+                        <li class="navbar-li">
+                            <a class="nav-link" href="quem-somos.html">Quem somos</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a class="nav-link" href="form.html">Ebooks</a>
+                        </li>
+                        <li class="navbar-li">
+                            <a class="nav-link" href="#redes">Conecte-se</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
 
     <div class="form-box">
         <h5 class="title">Obrigado!</h5>
         <a class="button" href="/ebook/ebook1-profissionaldeti.pdf">CLIQUE AQUI e baixe o seu e-book!</a>
     </div>
 
-    <footer class="footer-main" id="siganos">
-        <div class="logotipo">
-            <img src="img/icon.png" alt="logotipo"> Profissional de TI © 2019. Todos os direitos reservados.
-        </div>
-        <nav class="redes">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/Profissional-de-TI-2270995952954553/" target="_blank"><img src="img/face.png" alt="Facebook"></a>
-                </li>
-                <a href="https://www.linkedin.com/company/profissional-de-ti" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
+    <section>
+            <div class="redes" id="redes">
+                <a href="https://www.instagram.com/profissionaldeti.blog/" target="_blank"><img class="insta" src="img/insta-green.svg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/Profissional-de-TI-2270995952954553/" target="_blank"><img class="face" src="img/face-green.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/company/profissional-de-ti" target="_blank"><img class="linkedin" src="img/linkedin-green.svg" alt="Linkedin"></a>
+            </div>
+        </section>
+    
+        <footer class="logo-footer">
+            <div>
+                <img src="img/logo-footer.svg" alt="logo-footer">
+                <p class="footer-text">Profissional de TI © 2019. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-bar">
+                <p><br/> </p>
+            </div>
+        </footer>
 
 
 </body>
